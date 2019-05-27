@@ -1,0 +1,43 @@
+@import "../utils/variables";
+
+.history__form > .userSelect {
+  .dropdown-toggle {
+    height: 50px;
+  }
+  .selected-tag {
+    color: $font-color;
+    height: 50px;
+    font-size: 18px;
+    line-height: 49px;
+    margin: 0;
+    padding: 0 0 0 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    pointer-events: none;
+  }
+  .clear {
+    display: none;
+  }
+  &.open .open-indicator {
+    bottom: 10px;
+  }
+  .open-indicator {
+    bottom: 16px;
+    right: 20px;
+    &::before {
+      height: 13px;
+      width: 13px;
+      border-width: 2px 2px 0 0;
+      border-color: $link-shadow;
+    }
+  }
+  li {
+    &.highlight>a,
+    &:hover {
+      background: $button-color !important;
+    }
+    a {
+      padding: 10px 15px !important;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "../utils/variables";
+
+.btn {
+    width: 100%;
+    border-radius: 5px;
+    background-color: $button-color;
+    border: none;
+
+    font-size: 18px;
+    font-family: $font-family-bold;
+    color: $font-color;
+    margin-bottom: 20px;
+    transition: .2s ease background-color;
+    &:hover {
+        color: $font-color;
+        text-decoration: none;
+        background-color: darken($button-color, 10);
+    }
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+    &-dark-blue {
+        height: 48px;
+        font-size: 15px;
+        line-height: 1.2;
+        color: $bg-color;
+        font-family: $font-family;
+        background-color: #0a4766;
+        &:hover {
+            color: $bg-color;
+            background-color: darken(#0a4766, 10);
+        }
+    }
+    &:disabled {
+        color: $font-color;
+        text-decoration: none;
+        background-color: darken($button-color, 10);
+        cursor: not-allowed;
+    }
+}
+
+.btn-blue {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    color: $font-color;
+    min-height: 40px;
+    border-radius: 5px;
+    padding: 0 20px;
+    background-color: #f0f7fa;
+    white-space: nowrap;
+    border: none;
+    transition: .2s ease background-color;
+    &:hover {
+        color: $font-color;
+        text-decoration: none;
+        background-color: darken(#f0f7fa, 10);
+    }
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+.btn-green {
+    background-color: $button-color !important;
+    &:hover {
+        color: $font-color;
+        text-decoration: none;
+        background-color: darken($button-color, 10) !important;
+    }
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }    
+}
+
+.btn-save {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0a4766;
+}
+
+body .btn-sm {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px rgba(163, 190, 204, 0.3), 0 2px 3px -1px rgba(163, 190, 204, 0.5) !important;
+    color: #0a4766;
+    width: auto;
+    &:hover,
+    &:focus {
+        background-color: transparent;
+    }
+    &:focus {
+        box-shadow: 0 0 0 1px rgba(141, 198, 63, 0.25), inset 0 2px 1px 0 rgba(176, 230, 69, 0.25) !important;
+    }
+}
+
+.btn-link-clear {
+  background: none;
+  width: auto;
+  margin-bottom: 0;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.btn-icon {
+    background: $link-shadow;
+    border-radius: 100%;
+    opacity: 0.6;
+    padding: 4px 8px;
+
+    &:hover {
+        background: $link-shadow;
+        opacity: 1;
+    }
+
+    font-size: 18px;
+}

@@ -1,0 +1,135 @@
+@import "../utils/variables";
+@import "~font-awesome/scss/font-awesome";
+
+.icon {
+  &__arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    &:before,
+    &:after {
+      content: '';
+      left: 5px;
+      width: 2px;
+      height: 15px;
+      display: block;
+      border-radius: 1px;
+      background-color: $font-link-color;
+      position: absolute;
+    }
+    &:before {
+      top: -5px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      top: 5px;
+      transform: rotate(-45deg);
+    }
+  }
+  &__close,
+  &__info,
+  &__check,
+  &__edit,
+  &__download {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    opacity: 0.6;
+    transition: .2s ease opacity;
+    &::before,
+    &::after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      display: block;
+      border-radius: 1px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__close {
+    background-color: $link-shadow;
+    &:before,
+    &:after {
+      left: 15px;
+      top: 5px;
+      width: 2px;
+      height: 22px;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+  &__download {
+    background-color: #18aaf2;
+    &::before {
+      height: 16px;
+      width: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:after {
+      width: 10px;
+      height: 10px;
+      left: 50%;
+      bottom: 9px;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      transform: translate(-50%) rotate(45deg);
+      background-color: transparent;
+    }
+  }
+  &__info {
+    background-color: $link-shadow;
+    &::before,
+    &::after {
+      left: 50%;
+      width: 2px;
+      transform: translateX(-50%);
+    }
+    &::before{
+      top: 9px;
+      width: 3px;
+      height: 3px;
+    }
+    &::after {
+      height: 8px;
+      top: 16px;
+    }
+  }
+  &__check {
+    background-color: $link-shadow;
+    &:hover {
+      background-color: $font-link-color;
+    }
+    &::before {
+      width: 16px;
+      height: 8px;
+      border-color: #fff;
+      border-width: 0 0 2px 2px;
+      border-style: solid;
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+  &__edit {
+    background-color: $link-shadow;
+    background-image: url('~@/assets/images/ic-edit.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

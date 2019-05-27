@@ -1,0 +1,36 @@
+@import "icon";
+@import "nav";
+@import "btn";
+@import "userSelect";
+@import "dropdownMenu";
+@import "preloader";
+@import "datepicker";
+@import "alert";
+@import "unread";
+
+html, body {
+  min-width: 1024px !important;
+}
+.pretty {
+  .state {
+    svg {
+      margin: -1px 0 1px 2px;
+    }
+    label {
+      &:before {
+        border: 1px solid #d4e1e8;
+        box-shadow: 0 2px 4px -1px rgba(163, 190, 204, 0.5);
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+.variants li {
+  list-style: circle inside;
+}
+
+span.required {
+  color: #af0000;
+}
+

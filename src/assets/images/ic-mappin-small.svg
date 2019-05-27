@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-mappin-small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ic-mappin-small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <path d="M12,5.81821315 C12,2.60484085 9.31387464,0 6,0 C2.68636122,0 0,2.60484085 0,5.81821315 C0,7.23103545 0.519841972,8.52644806 1.38369008,9.53408055 L6.00518899,16 L10.6942626,9.43976219 C10.8626688,9.23538661 11.0169232,9.01998234 11.1560823,8.79354936 L11.2034908,8.72760693 L11.1957073,8.72760693 C11.7063506,7.8712744 12,6.87846173 12,5.81821315" id="Path" fill="#7C98A6"></path>
+    </g>
+</svg>

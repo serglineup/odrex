@@ -1,0 +1,141 @@
+$fa-font-path: "~font-awesome/fonts" !default;
+
+@import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/scss/font-awesome';
+@import '~pretty-checkbox/src/pretty-checkbox';
+@import "../utils/variables";
+
+.app {
+  line-height: 18px;
+  min-height: 100vh;
+  color: $font-color;
+  font-family: $font-family;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1300px;
+  }
+}
+
+.pretty {
+  margin-right: 10px;
+
+  .state {
+    label {
+      &:before,
+      &:after {
+        border-radius: 5px;
+        border: 1px solid #7c98a6;
+        width: 20px;
+        height: 20px;
+      }
+
+      &:before {
+        border-color: $pretty--color-default;
+        background-color: #ffffff;
+      }
+
+      &:after {
+        box-shadow: 0 2px 4px -1px rgba(163, 190, 204, 0.5);
+      }
+    }
+  }
+}
+
+body {
+  .form-group, .vdp-datepicker > div {
+    & > label, & > div.d-flex label, & > div.d-flex a {
+      font-family: $font-family;
+      font-size: 15px;
+      color: $font-color;
+    }
+
+    & > div.d-flex a {
+      color: $font-link-color;
+    }
+
+    & input {
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px -1px rgba(163, 190, 204, 0.5);
+      height: 50px;
+      border: 1px solid #ffffff;
+
+      font-family: $font-family;
+      font-size: 18px;
+    }
+  }
+
+  .invalid {
+    & input {
+      border: 1px solid red !important;
+    }
+  }
+
+  .form-control {
+    border: 1px solid rgba(163, 190, 204, 0.25) !important;
+
+    &:focus {
+      box-shadow: 0 2px 4px -1px rgba(163, 190, 204, 0.5);
+    }
+  }
+
+  .btn:focus {
+    box-shadow: none !important;
+  }
+
+  .alert-danger, .alert-success {
+    background: none;
+    border: none;
+
+    font-family: $font-family;
+    font-size: 18px;
+  }
+
+  a.router-link {
+    color: $font-link-color;
+
+    font-family: $font-family;
+  }
+}
+
+.arrow-link {
+  color: $font-link-color;
+  font-size: 18px;
+  .icon__arrow {
+    opacity: .2;
+  }
+  &:hover {
+    .icon__arrow {
+      opacity: 1;
+    }
+  }
+}
+
+.fa-clickable {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.list-disc {
+  list-style: disc;
+  color: $font-color; 
+  a {
+    color: $font-color; 
+  }
+}

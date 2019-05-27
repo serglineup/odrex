@@ -1,0 +1,77 @@
+@import "../utils/variables";
+
+.circonf-wrapper {
+    text-align: center;   
+    min-height: 60vh; 
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circonf {
+  margin: 1em;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 4px #e8eff2;
+  animation: circ-anim 0.7s linear infinite;
+}
+
+.circonf-1 {
+  border-bottom-color: #b0e645;
+}
+
+@keyframes circ-anim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading-1 .circle {
+  stroke: #000066;
+  fill: none;
+  stroke-width: 3px;
+  stroke-dashoffset: -60px;
+  stroke-dasharray: 60px;
+  animation: loading1 1.4s cubic-bezier(0.42, 0, 0.29, 1) infinite;
+  transform: rotate(90deg);
+  transform-origin: 50%;
+  position: relative;
+}
+@keyframes loading1 {
+  0% {
+    stroke-dashoffset: 60px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -60px;
+  }
+}
+
+.circonf-wrapper p {
+  color: #0a4766;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 7px;     
+}
+
+.circonf-wrapper p + p {
+  font-weight: normal;
+}
+
+
